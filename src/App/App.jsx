@@ -1,5 +1,5 @@
-import logo from './logo.svg';
 import Header from "../components/Header";
+import Home from "../components/Home"
 import './App.css';
 
 function App() {
@@ -7,8 +7,7 @@ function App() {
     <div className="App">
       <Header />
       <main>
-        <img src={logo} className="App-logo" alt="logo" />
-        <h2>My Content goes Here</h2>
+        <Home />
       </main>
       <footer>footer</footer>
     </div>

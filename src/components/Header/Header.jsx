@@ -1,10 +1,12 @@
-const React = require('react');
+
+import './Header.css'
 
 function Header(props){
     return(
-        <div className="header">
-            <h1>Michael Zinzun<span className="title">Software Engineer</span></h1>
-        </div>
+        <header className="header">
+            <h1>Michael Zinzun</h1>
+            <h2>Software Engineer</h2>
+        </header>
     )
 }
 export default Header;
