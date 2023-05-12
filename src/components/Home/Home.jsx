@@ -5,7 +5,7 @@ function Home(){
         <div className='home'>
             <aside></aside>
             <section className='homeImage'>
-                <img src="me1.jpg" alt="pic of Mzinzun"/>
+                <img src="./images/me1.jpg" alt="pic of Mzinzun"/>
             </section>
         </div>
     )
