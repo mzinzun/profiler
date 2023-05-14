@@ -3,4 +3,45 @@
     height: 100%;
     margin: 0;
     padding: 0;
+    overflow:hidden;
+    position: relative;
 }
+homeImage{
+    height: 75%;
+    background-image: url("../../components/images/me1.jpg");
+    background-repeat: no-repeat;
+    border-radius: 5%;
+    background-size: contain;
+}
+.img1 {
+    width: 100px;
+    height: 100px;
+    /* left: 120px; */
+    position: absolute;
+    z-index: 1;
+    animation: 5s ease-in 1s infinite img1Floater;
+}
+@keyframes img0Floater {0%{top: -30%;}100% {top: 100%;}}
+@keyframes img1Floater {0%{top: -30%;}100% {top: 100%;}}
+@keyframes img2Floater {0%{top: -30%;}100% {top: 100%;}}
+@keyframes img3Floater {0%{top: -30%;}100% {top: 100%;}}
+@keyframes img5Floater {0%{top: -30%;}100% {top: 100%;}}
+@keyframes img6Floater {0%{top: -30%;}100% {top: 100%;}}
+@keyframes img7Floater {0%{top: -30%;}100% {top: 100%;}}
+@keyframes img4Floater {0%{top: -30%;}100% {top: 100%;}}
+@keyframes img8Floater {0%{top: -30%;}100% {top: 100%;}}
+@keyframes img9Floater {0%{top: -30%;}100% {top: 100%;}}
+@keyframes img10Floater {0%{top: -30%;}100% {top: 100%;}}
+@keyframes img11Floater {0%{top: -30%;}100% {top: 100%;}}
+@keyframes img12Floater {0%{top: -30%;}100% {top: 100%;}}
+@keyframes img13Floater {0%{top: -30%;}100% {top: 100%;}}
+@keyframes img14Floater {0%{top: -30%;}100% {top: 100%;}}
+@keyframes img15Floater {0%{top: -30%;}100% {top: 100%;}}
+@keyframes img16Floater {0%{top: -30%;}100% {top: 100%;}}
+@keyframes img17Floater {0%{top: -30%;}100% {top: 100%;}}
+@keyframes img18Floater {0%{top: -30%;}100% {top: 100%;}}
+@keyframes img19Floater {0%{top: -30%;}100% {top: 100%;}}
+@keyframes img20Floater {0%{top: -30%;}100% {top: 100%;}}
+@keyframes img21Floater {0%{top: -30%;}100% {top: 100%;}}
+@keyframes img22Floater {0%{top: -30%;}100% {top: 100%;}}
+
