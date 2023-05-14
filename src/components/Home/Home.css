@@ -1,5 +1,8 @@
 .home {
-    background-color: #423900;
+    background-image: url("../images/self2.png");
+    background-size: 45%;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -14,12 +17,12 @@ homeImage{
     background-size: contain;
 }
 .img1 {
-    width: 100px;
-    height: 100px;
-    /* left: 120px; */
+    width: clamp(3rem,6rem,8rem);
     position: absolute;
+    top: -25%;
     z-index: 1;
-    animation: 5s ease-in 1s infinite img1Floater;
+   
+   
 }
 @keyframes img0Floater {0%{top: -30%;}100% {top: 100%;}}
 @keyframes img1Floater {0%{top: -30%;}100% {top: 100%;}}
