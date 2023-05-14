@@ -1,15 +1,21 @@
 {
   "files": {
-    "main.css": "/profiler/static/css/main.7f9f3907.css",
-    "main.js": "/profiler/static/js/main.dbceaf84.js",
+    "main.css": "/profiler/static/css/main.0a394f99.css",
+    "main.js": "/profiler/static/js/main.8dcf5abc.js",
+    "static/media/self2.png": "/profiler/static/media/self2.e73ad6a79655a5ef16e9.png",
     "static/media/3DLight.jpg": "/profiler/static/media/3DLight.69e503c06cf78d1b3241.jpg",
     "static/media/zincom.png": "/profiler/static/media/zincom.2817553af8b83cd0d28b.png",
+    "static/media/linkedin2.png": "/profiler/static/media/linkedin2.88b3cea5abe0168bc72d.png",
+    "static/media/bootstrap2.png": "/profiler/static/media/bootstrap2.6d9dddb021e4cc864369.png",
+    "static/media/express2.png": "/profiler/static/media/express2.fd29317eb0e9f0776f1c.png",
+    "static/media/react2.png": "/profiler/static/media/react2.9b0ba0c495dda46dd23d.png",
+    "static/media/nodejs2.png": "/profiler/static/media/nodejs2.d413612a1029432d006e.png",
     "index.html": "/profiler/index.html",
-    "main.7f9f3907.css.map": "/profiler/static/css/main.7f9f3907.css.map",
-    "main.dbceaf84.js.map": "/profiler/static/js/main.dbceaf84.js.map"
+    "main.0a394f99.css.map": "/profiler/static/css/main.0a394f99.css.map",
+    "main.8dcf5abc.js.map": "/profiler/static/js/main.8dcf5abc.js.map"
   },
   "entrypoints": [
-    "static/css/main.7f9f3907.css",
-    "static/js/main.dbceaf84.js"
+    "static/css/main.0a394f99.css",
+    "static/js/main.8dcf5abc.js"
   ]
 }
