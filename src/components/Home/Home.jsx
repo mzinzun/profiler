@@ -2,8 +2,8 @@ import {useState} from 'react';
 import "./Home.css";
 
 
-const logos = ["bootstrap2.png","express2.png","github2.png","lastmile2.png","linkedin2.png","zincom.png","nextchapter2.png","nodejs2.png","bootstrap2.png","express2.png","github2.png","lastmile2.png","linkedin2.png","zincom.png","nextchapter2.png","nodejs2.png","zincom.png","nextchapter2.png","lastmile2.png"]
-
+const logos = ["bootstrap2.png","express2.png","react2.png","github2.png","lastmile2.png","linkedin2.png","zincom.png","nextchapter2.png","nodejs2.png","react2.png","bootstrap2.png","express2.png","github2.png","lastmile2.png","linkedin2.png","zincom.png","nextchapter2.png","react2.png","nodejs2.png","zincom.png","nextchapter2.png","lastmile2.png"]
+console.log("logo's length", logos.length);
 function Home(){
     const[winWidth, setWinWidth] = useState(window.innerWidth);
     const[winHeight, setWinHeight] = useState(window.innerHeight);

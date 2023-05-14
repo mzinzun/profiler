@@ -1,7 +1,7 @@
 .home {
     background-image: url("../images/self2.png");
     background-size: 45%;
-    background-position: center;
+    background-position: center top;
     background-repeat: no-repeat;
     height: 100%;
     margin: 0;
@@ -17,7 +17,7 @@ homeImage{
     background-size: contain;
 }
 .img1 {
-    width: clamp(3rem,6rem,8rem);
+    width: clamp(3rem,8vw,6rem);
     position: absolute;
     top: -25%;
     z-index: 1;
