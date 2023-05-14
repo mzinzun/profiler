@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/profiler/static/css/main.9f50d45a.css",
-    "main.js": "/profiler/static/js/main.77ff8dfa.js",
+    "main.css": "/profiler/static/css/main.7f9f3907.css",
+    "main.js": "/profiler/static/js/main.dbceaf84.js",
     "static/media/3DLight.jpg": "/profiler/static/media/3DLight.69e503c06cf78d1b3241.jpg",
+    "static/media/zincom.png": "/profiler/static/media/zincom.2817553af8b83cd0d28b.png",
     "index.html": "/profiler/index.html",
-    "main.9f50d45a.css.map": "/profiler/static/css/main.9f50d45a.css.map",
-    "main.77ff8dfa.js.map": "/profiler/static/js/main.77ff8dfa.js.map"
+    "main.7f9f3907.css.map": "/profiler/static/css/main.7f9f3907.css.map",
+    "main.dbceaf84.js.map": "/profiler/static/js/main.dbceaf84.js.map"
   },
   "entrypoints": [
-    "static/css/main.9f50d45a.css",
-    "static/js/main.77ff8dfa.js"
+    "static/css/main.7f9f3907.css",
+    "static/js/main.dbceaf84.js"
   ]
 }
