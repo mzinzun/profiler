@@ -25,7 +25,7 @@ function App() {
           </Routes>
         </main>
         <footer className = "row m-0 p-0 px-2 justify-content-between align-items-center">
-          <h6 className = "col-4 text-start">copyright &amp;2023 - Designed by Michael Zinzun</h6>
+          <h6 className = "col-4 text-start">copyright &copy;2023 - Designed by Michael Zinzun</h6>
           <div className = "col-4 text-end">
             <i className = "fab fa-linkedin fa-2x mx-1"></i>
             <i className = "fa-brands fa-github fa-2x mx-1"></i>
