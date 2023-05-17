@@ -11,8 +11,8 @@ function App() {
           <ul className='menu navbar justify-content-space-evenly;'>
             <Link to='/profiler/home'><li>Home</li></Link>
             <Link to='/profiler/bio'><li>Bio</li></Link>
-            <Link to=/'profiler/resume'><li>Resume</li></Link>
-            <Link to='/profiler/resume'><li>Contact</li></Link>
+            <Link to='/profiler/resume'><li>Resume</li></Link>
+            <Link to='/profiler/contact'><li>Contact</li></Link>
           </ul>
         </nav>
         <main>
@@ -20,7 +20,8 @@ function App() {
             <Route path="/profiler/" element={<Home />} />
             <Route path="/profiler/home" element={<Home />} />
             <Route path="/profiler/bio" element={<Header />} />
-            <Route path="/proflier/*" element={<Home />} />
+            <Route path="/profiler/contact" element={<Header />} />
+            <Route path="/profiler/*" element={<Home />} />
           </Routes>
         </main>
         <footer>footer</footer>
