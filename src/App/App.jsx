@@ -17,9 +17,10 @@ function App() {
         </nav>
         <main>
           <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route exact path="/home" element={<Home />} />
-            <Route exact path="/bio" element={<Header />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/bio" element={<Header />} />
+            <Route path="/*" element={<Home />} />
           </Routes>
         </main>
         <footer>footer</footer>
