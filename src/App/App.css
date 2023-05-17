@@ -17,8 +17,6 @@ li {
   font-size: 1.5rem;
   font-family:cursive;
   color: navy;
-
-
 }
 a {
   text-decoration: none;
@@ -30,7 +28,7 @@ nav {
 }
 .navbar {
   background-color: rgba(63,54,5,.5);
-  padding: 0;
+  padding: 10px 10%;
   margin: 0;
 }
 
