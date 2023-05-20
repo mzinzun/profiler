@@ -6,7 +6,7 @@ function Header(props){
         <header className="header">
             <div>
                 <h1>Michael Zinzun</h1>
-                <h2>Software Engineer</h2>
+                <div className = 'conicHeader'><h2>Software Engineer</h2></div>
             </div>
            
         </header>

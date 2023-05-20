@@ -10,9 +10,31 @@
 }
 .header h1 {
     font-weight: bolder;
-    font-size: 4rem;
+    font-size: clamp(2rem,6vw,4rem);
     padding-top: 15px; /*to compensate for font overflow */
 }
+.conicHeader{
+    /* background: linear-gradient(to right,#b3d0fa 10%,#0c63e4 20%, #3d4858 20%); */
+    animation: 5s ease-in .5s infinite conicHeader;
+}
 .header h2{
+    /* #b3d0fa, #0c63e4, #3d4858 */
+    font-size: clamp(1rem,4vw,2.5rem);
     font-weight: bolder;
+    animation: 5s ease-in .5s infinite conicHeader;
+    
+}
+@keyframes conicHeader{
+    0%{
+        color: #b3d0fa;
+    }
+    25% {
+        color: #0c63e4;
+    }
+    75% {
+        color: #3d4858;
+    }
+    100% {
+        color: #b3d0fa;
+    }
 }
