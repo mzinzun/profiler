@@ -23,7 +23,7 @@ function App(props) {
   }
   return (
     <div className="App">
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Header />
         <nav>
           <ul className='menu navbar justify-content-space-evenly;'>
