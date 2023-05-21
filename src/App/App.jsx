@@ -27,21 +27,21 @@ function App(props) {
         <Header />
         <nav>
           <ul className='menu navbar justify-content-space-evenly;'>
-            <Link to='/profiler/home'><li>Home</li></Link>
-            <Link to='/profiler/bio'><li>Bio</li></Link>
-            <Link to='/profiler/resume'><li>Resume</li></Link>
-            <Link to='/profiler/contact'><li>Contact</li></Link>
+            <Link to='/home'><li>Home</li></Link>
+            <Link to='/bio'><li>Bio</li></Link>
+            <Link to='/resume'><li>Resume</li></Link>
+            <Link to='/contact'><li>Contact</li></Link>
             <Link onClick={handleBioPage}><li>Show Bios</li></Link>
           </ul>
         </nav>
         <main>
           <Routes>
-            <Route exact path  ="/profiler/" element={<Home setOpacity = {setOpacity} opacity={opacity}/>} />
-            <Route exact path  ="/profiler/home" element={<Home setOpacity = {setOpacity} opacity={opacity}/>} />
-            <Route exact path ="/profiler/bio" element={<Bio setOpacity = {setOpacity} opacity={opacity}/>} />
-            <Route exact path="/profiler/resume" element={<Resume setOpacity = {setOpacity} opacity={opacity}/>} />
-            <Route exact path="/profiler/contact" element={<Contact setOpacity = {setOpacity} opacity={opacity}/>} />
-            <Route path="/profiler/*" element={<Home />} />
+            <Route exact path  ="/" element={<Home setOpacity = {setOpacity} opacity={opacity}/>} />
+            <Route exact path  ="/home" element={<Home setOpacity = {setOpacity} opacity={opacity}/>} />
+            <Route exact path ="/bio" element={<Bio setOpacity = {setOpacity} opacity={opacity}/>} />
+            <Route exact path="/resume" element={<Resume setOpacity = {setOpacity} opacity={opacity}/>} />
+            <Route exact path="/contact" element={<Contact setOpacity = {setOpacity} opacity={opacity}/>} />
+            <Route path="/*" element={<Home />} />
           </Routes>
           <div className = 'fillerDiv'>
           {logos.map((el,idx)=>{
