@@ -15,7 +15,7 @@
 }
 .conicHeader{
     /* background: linear-gradient(to right,#b3d0fa 10%,#0c63e4 20%, #3d4858 20%); */
-    animation: 5s ease-in .5s infinite conicHeader;
+    animation: 3s ease-in .5s infinite conicHeader;
 }
 .header h2{
     /* #b3d0fa, #0c63e4, #3d4858 */
@@ -28,11 +28,13 @@
     0%{
         color: #b3d0fa;
     }
-    25% {
-        color: #0c63e4;
+    35% {
+        color: rgb(116, 57, 138);
+        /* color: #0c63e4; */
     }
-    75% {
-        color: #3d4858;
+    65% {
+        color: gold;
+        /* color: #3d4858; */
     }
     100% {
         color: #b3d0fa;

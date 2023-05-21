@@ -8,13 +8,11 @@ import Resume from "../components/Resume";
 import './App.css';
 const logos = ["bootstrap2.png","express2.png","react2.png","github2.png","lastmile2.png","linkedin2.png","zincom.png","nextchapter2.png","nodejs2.png","react2.png","bootstrap2.png","express2.png","github2.png","lastmile2.png","linkedin2.png","zincom.png","nextchapter2.png","react2.png","nodejs2.png","zincom.png","nextchapter2.png","lastmile2.png"]
 function App(props) {
-  const [opacity, setOpacity] = useState(0);
+  const [opacity, setOpacity] = useState(1);
   const [winWidth, setWinWidth] = useState(window.innerWidth);
   const [winHeight, setWinHeight] = useState(window.innerHeight);
   useEffect(()=>{
     console.log('App Component is Loaded');
-    setOpacity(1);
-
   },[]);
   function handleBioPage(){
     console.log('bio click handler works!!');
@@ -36,12 +34,12 @@ function App(props) {
         </nav>
         <main>
           <Routes>
-            <Route exact path  ="/" element={<Home setOpacity = {setOpacity} opacity={opacity}/>} />
-            <Route exact path  ="/home" element={<Home setOpacity = {setOpacity} opacity={opacity}/>} />
-            <Route exact path ="/bio" element={<Bio setOpacity = {setOpacity} opacity={opacity}/>} />
-            <Route exact path="/resume" element={<Resume setOpacity = {setOpacity} opacity={opacity}/>} />
-            <Route exact path="/contact" element={<Contact setOpacity = {setOpacity} opacity={opacity}/>} />
-            <Route path="/*" element={<Home />} />
+            <Route path = "/" element={<Home setOpacity = {setOpacity} opacity={opacity}/>} />
+            <Route path = "/home" element={<Home setOpacity = {setOpacity} opacity={opacity}/>} />
+            <Route path = "/bio" element={<Bio setOpacity = {setOpacity} opacity={opacity}/>} />
+            <Route path = "/resume" element={<Resume setOpacity = {setOpacity} opacity={opacity}/>} />
+            <Route path = "/contact" element={<Contact setOpacity = {setOpacity} opacity={opacity}/>} />
+            <Route path = "/*" element={<Home />} />
           </Routes>
           <div className = 'fillerDiv'>
           {logos.map((el,idx)=>{
