@@ -1,16 +1,16 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack5';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import 'react-pdf/dist/esm/Page/TextLayer.css';
 import './Resume.css';
 import resume from './mzResume.pdf'
 const Resume = (props) => {
-    const [pageNumber, setPageNumber] = useState(1);
+    // const [pageNumber, setPageNumber] = useState(1);
     useEffect(() => {
         console.log('Resume Component loaded');
         props.setlogosOpacity(.2);
-    }, [])
+    }, [props])
     return (
         <>
             <div className='resumePage row m-0 p-0 '>
@@ -30,7 +30,7 @@ const Resume = (props) => {
                 </aside>
                 <section className='resume col-8'>
                     <Document file={resume} className='resDoc'>
-                        <Page pageNumber={pageNumber} className='resDoc' />
+                        <Page pageNumber={1} className='resDoc' />
                     </Document>
                 </section>
             </div>
