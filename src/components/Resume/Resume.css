@@ -5,6 +5,9 @@
     height: 95%;
     overflow: hidden;
 }
+.resumePage>aside{
+    padding: 20px;
+}
 .resume {
     overflow: scroll;
     border: thin solid red;

@@ -16,6 +16,17 @@ const Resume = (props) => {
             <div className='resumePage row m-0 p-0 '>
                 <aside className='col-4 bg-success'>
                     <h2>Skills</h2>
+                    <ul className = "skills">
+                        <li>HTML/CSS</li>
+                        <li>Javascript</li>
+                        <li>NodeJS/Express</li>
+                        <li>PHP</li>
+                        <li>ReactJS</li>
+                        <li>MongoDB</li>
+                        <li>SQL</li>
+                        <li>Problem Solving</li>
+
+                    </ul>
                 </aside>
                 <section className='resume col-8'>
                     <Document file={resume} className='resDoc'>
