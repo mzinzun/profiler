@@ -1,0 +1,23 @@
+.resumePage{
+    position: relative;
+    z-index: 550;
+    border: thin solid green;
+    height: 95%;
+    overflow: hidden;
+}
+.resume {
+    overflow: scroll;
+    border: thin solid red;
+    height: 100%;
+}
+/* .react-pdf__Page__textContent, .annotationLayer{
+    background-color: gold;
+    display: none;
+} */
+.react-pdf__Page__canvas {
+width: 100% !important;
+height: auto !important;
+}
+resDoc {
+    width: 100%;
+}

@@ -1,27 +1,29 @@
  .bioPage {
-    position: absolute;
-    width: 74%;
-    height: 80%;
-    left: 50%;
-    top: 5%;
-    transform: translate(-50%);
-    background-color: antiquewhite;
-    border-radius: 25px;
-    padding: 10px 15px;
-    z-index: 550;
-    opacity: .7;
-    overflow:auto;
+     position: absolute;
+     width: 74%;
+     height: 80%;
+     left: 50%;
+     top: 5%;
+     transform: translate(-50%);
+     background-color: antiquewhite;
+     border-radius: 25px;
+     padding: 10px 15px;
+     z-index: 550;
+     opacity: 0;
+     transition: 3s;
+     overflow: auto;
 
  }
- .bioPage>h1{
-    padding: 20px 0;
-    font-family: fantasy;
-    font-weight: bolder;
+ .bioPage>h1 {
+     padding: 20px 0;
+     font-family: fantasy;
+     font-weight: bolder;
  }
+
  .bio {
-    font-family: fantasy;
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding: 0 15px;
+     font-family: fantasy;
+     font-size: 1.5rem;
+     font-weight: bold;
+     padding: 0 15px;
 
  }

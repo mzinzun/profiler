@@ -1,5 +1,5 @@
 .home {
-    background-image: url("../images/self2.png");
+    background-image: url("../images/self3.png");
     background-size: 45%;
     background-position: center top;
     background-repeat: no-repeat;
@@ -8,6 +8,7 @@
     padding: 0;
     overflow:hidden;
     position: relative;
+    transition: all 3s;
 }
 .img1 {
     width: clamp(3rem,8vw,6rem);

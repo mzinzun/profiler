@@ -54,6 +54,7 @@ main{
     top: -25%;
     z-index: 1;
     opacity: 1;
+    transition: all 2s;
 }
 @keyframes img0Floater {0%{top: -30%;}100% {top: 100%;}}
 @keyframes img1Floater {0%{top: -30%;}100% {top: 100%;}}

@@ -1,16 +1,16 @@
-import {useEffect, useState} from 'react';
+import { useEffect, useState } from 'react';
 import "./Home.css";
 
-function Home(props){
-    const [winWidth, setWinWidth] = useState(window.innerWidth);
-  const [winHeight, setWinHeight] = useState(window.innerHeight); 
-  useEffect(()=>{
-    console.log('Home Component is Loaded');
-    props.setOpacity(1);
-
-  },[])
+function Home(props) {
+    const [homeOpacity, setHomeOpacity] = useState(0);
+    useEffect(() => {
+        console.log('Home Component is Loaded');
+        const bioPage = document.querySelector('.home');
+        setHomeOpacity(1);
+        props.setlogosOpacity(1);
+    }, [])
     return (
-        <div className='home'> 
+        <div className='home' style={{opacity: homeOpacity}}>
         </div>
     )
 }

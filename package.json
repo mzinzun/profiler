@@ -4,8 +4,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "pdfjs-dist": "^3.6.172",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-pdf": "^6.2.2",
     "react-router-dom": "^6.11.1",
     "react-scripts": "5.0.1"
   },
