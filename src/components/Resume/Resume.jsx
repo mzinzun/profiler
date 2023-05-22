@@ -1,14 +1,14 @@
 import React from 'react';
 import { useEffect } from 'react';
-import { pdfjs,Document, Page } from 'react-pdf/dist/esm/entry.webpack5';
+import { Document, Page } from 'react-pdf/dist/esm/entry.webpack5';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import 'react-pdf/dist/esm/Page/TextLayer.css';
 import './Resume.css';
 import resume from './mzResume.pdf';
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-    'pdfjs-dist/build/pdf.worker.min.js',
-    import.meta.url,
-  ).toString();
+// pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+//     'pdfjs-dist/build/pdf.worker.min.js',
+//     import.meta.url,
+//   ).toString();
 const Resume = (props) => {
     // const [pageNumber, setPageNumber] = useState(1);
     useEffect(() => {
