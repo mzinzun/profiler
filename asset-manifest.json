@@ -1,9 +1,11 @@
 {
   "files": {
-    "main.css": "/profiler/static/css/main.dc775da3.css",
-    "main.js": "/profiler/static/js/main.de1ff46c.js",
-    "static/media/self2.png": "/profiler/static/media/self2.e73ad6a79655a5ef16e9.png",
+    "main.css": "/profiler/static/css/main.ea19a160.css",
+    "main.js": "/profiler/static/js/main.ee2ac53b.js",
     "static/media/3DLight.jpg": "/profiler/static/media/3DLight.69e503c06cf78d1b3241.jpg",
+    "static/media/pdf.worker.js": "/profiler/static/media/pdf.worker.7172a025167de5d78c2b.js",
+    "static/media/self3.png": "/profiler/static/media/self3.501f28d42107752fc5e0.png",
+    "static/media/mzResume.pdf": "/profiler/static/media/mzResume.c7eae21070b3804e16f8.pdf",
     "static/media/zincom.png": "/profiler/static/media/zincom.2817553af8b83cd0d28b.png",
     "static/media/linkedin2.png": "/profiler/static/media/linkedin2.88b3cea5abe0168bc72d.png",
     "static/media/bootstrap2.png": "/profiler/static/media/bootstrap2.6d9dddb021e4cc864369.png",
@@ -11,11 +13,11 @@
     "static/media/react2.png": "/profiler/static/media/react2.9b0ba0c495dda46dd23d.png",
     "static/media/nodejs2.png": "/profiler/static/media/nodejs2.d413612a1029432d006e.png",
     "index.html": "/profiler/index.html",
-    "main.dc775da3.css.map": "/profiler/static/css/main.dc775da3.css.map",
-    "main.de1ff46c.js.map": "/profiler/static/js/main.de1ff46c.js.map"
+    "main.ea19a160.css.map": "/profiler/static/css/main.ea19a160.css.map",
+    "main.ee2ac53b.js.map": "/profiler/static/js/main.ee2ac53b.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc775da3.css",
-    "static/js/main.de1ff46c.js"
+    "static/css/main.ea19a160.css",
+    "static/js/main.ee2ac53b.js"
   ]
 }
