@@ -1,16 +1,18 @@
 import React from 'react';
-import { useEffect } from 'react';
+import { useEffect,useState } from 'react';
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack5';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import 'react-pdf/dist/esm/Page/TextLayer.css';
 import './Resume.css';
 import resume from './mzResume.pdf';
+
 // pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 //     'pdfjs-dist/build/pdf.worker.min.js',
 //     import.meta.url,
 //   ).toString();
 const Resume = (props) => {
-    // const [pageNumber, setPageNumber] = useState(1);
+    const [pageNumber, setPageNumber] = useState(1);
+    const [res1,setres1]=useState(resume);
     useEffect(() => {
         console.log('Resume Component loaded');
         props.setlogosOpacity(.2);
@@ -33,8 +35,8 @@ const Resume = (props) => {
                     </ul>
                 </aside>
                 <section className='resume col-8'>
-                    <Document file={resume} className='resDoc'>
-                        <Page pageNumber={1} className='resDoc' />
+                    <Document file={res1} className='resDoc'>
+                        <Page pageNumber={pageNumber} className='resDoc' />
                     </Document>
                 </section>
             </div>
