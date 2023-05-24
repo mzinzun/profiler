@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/profiler/static/css/main.ea19a160.css",
-    "main.js": "/profiler/static/js/main.e22a87ea.js",
+    "main.css": "/profiler/static/css/main.6ee6d39d.css",
+    "main.js": "/profiler/static/js/main.fc891a65.js",
     "static/media/3DLight.jpg": "/profiler/static/media/3DLight.69e503c06cf78d1b3241.jpg",
     "static/media/pdf.worker.js": "/profiler/static/media/pdf.worker.7172a025167de5d78c2b.js",
     "static/media/self3.png": "/profiler/static/media/self3.501f28d42107752fc5e0.png",
@@ -13,11 +13,11 @@
     "static/media/react2.png": "/profiler/static/media/react2.9b0ba0c495dda46dd23d.png",
     "static/media/nodejs2.png": "/profiler/static/media/nodejs2.d413612a1029432d006e.png",
     "index.html": "/profiler/index.html",
-    "main.ea19a160.css.map": "/profiler/static/css/main.ea19a160.css.map",
-    "main.e22a87ea.js.map": "/profiler/static/js/main.e22a87ea.js.map"
+    "main.6ee6d39d.css.map": "/profiler/static/css/main.6ee6d39d.css.map",
+    "main.fc891a65.js.map": "/profiler/static/js/main.fc891a65.js.map"
   },
   "entrypoints": [
-    "static/css/main.ea19a160.css",
-    "static/js/main.e22a87ea.js"
+    "static/css/main.6ee6d39d.css",
+    "static/js/main.fc891a65.js"
   ]
 }
