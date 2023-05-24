@@ -37,8 +37,8 @@ const Resume = (props) => {
     return (
         <>
             <div className='resumePage row m-0 p-0 '>
-                <aside className='col-4 bg-success'>
-                    <h2>Skills</h2>
+                <aside className='col-md-3 bg text-center'>
+                    <h2 className='text-center border-bottom text-success'>Skills</h2>
                     <ul className = "skills">
                         <li>HTML/CSS</li>
                         <li>Javascript</li>
@@ -50,7 +50,7 @@ const Resume = (props) => {
                         <li>Problem Solving</li>
                     </ul>
                 </aside>
-                <section className='resume col-8'>
+                <section className='resume col-md-9'>
                     <Document file={pdfDoc} className='resDoc' onLoadSuccess={onDocumentLoadSuccess} >
                         <Page pageNumber={pageNumber} className='resDoc' />
                     </Document>

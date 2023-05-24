@@ -1,16 +1,24 @@
 .resumePage{
     position: relative;
     z-index: 550;
-    border: thin solid green;
     height: 95%;
     overflow: hidden;
 }
 .resumePage>aside{
     padding: 20px;
+    background-color: rgba(250, 235, 215,.6);
+}
+.skills {
+    padding: 0;
+    
+}
+.skills>li {
+    font-family: monospace;
+    font-size: 1rem;
+    color: navy;
 }
 .resume {
-    overflow: scroll;
-    border: thin solid red;
+    overflow: auto;
     height: 100%;
 }
 /* .react-pdf__Page__textContent, .annotationLayer{
@@ -22,5 +30,5 @@ width: 100% !important;
 height: auto !important;
 }
 resDoc {
-    width: 100%;
+    /* width: 100%; */
 }
