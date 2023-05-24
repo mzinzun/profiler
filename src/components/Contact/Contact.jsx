@@ -4,8 +4,7 @@ import './Contact.css';
 function Contact(props){
     useEffect(()=>{
         console.log('Contact Component Loaded');
-        props.setOpacity(.2);
-
+        props.setlogosOpacity(.2);
 
     },[])
     return (

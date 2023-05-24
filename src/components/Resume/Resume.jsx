@@ -50,7 +50,7 @@ const Resume = (props) => {
                         <li>Problem Solving</li>
                     </ul>
                 </aside>
-                <section className='resume col-md-9'>
+                <section className='resume col-md-9 p-0'>
                     <Document file={pdfDoc} className='resDoc' onLoadSuccess={onDocumentLoadSuccess} >
                         <Page pageNumber={pageNumber} className='resDoc' />
                     </Document>

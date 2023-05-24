@@ -6,7 +6,7 @@
 }
 .resumePage>aside{
     padding: 20px;
-    background-color: rgba(250, 235, 215,.6);
+    background-color: rgba(250, 250, 250,.6);
 }
 .skills {
     padding: 0;
@@ -14,7 +14,7 @@
 }
 .skills>li {
     font-family: monospace;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: navy;
 }
 .resume {

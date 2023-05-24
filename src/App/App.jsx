@@ -55,8 +55,8 @@ function App(props) {
                 <footer className="row m-0 p-0 px-2 justify-content-between align-items-center">
                     <h6 className="col-4 text-start">copyright &copy;2023 - Designed by Michael Zinzun</h6>
                     <div className="col-4 text-end">
-                        <i className="fab fa-linkedin fa-2x mx-1"></i>
-                        <i className="fa-brands fa-github fa-2x mx-1"></i>
+                        <Link to="https://linkedin.com/in/michaelzinzun" target="_blank"><i className="fab fa-linkedin fa-2x mx-1"></i></Link>
+                        <Link to="https://github.com/mzinzun" target="_blank"><i className="fa-brands fa-github fa-2x mx-1"></i></Link>
                     </div>
                 </footer>
             </Router>
