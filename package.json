@@ -15,6 +15,9 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
+    "copy-standard-fonts": "node ./scripts/copy-standard-fonts.mjs",
+    "copy-worker": "node ./scripts/copy-worker.mjs",
+    "dev": "react-scripts start",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
