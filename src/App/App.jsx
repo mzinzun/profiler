@@ -15,10 +15,6 @@ function App(props) {
     useEffect(() => {
         console.log('App Component is Loaded');
     }, []);
-    function handleBioPage() {
-        console.log('bio click handler works!!');
-        const bioDiv = document.querySelector('fillerDive');
-    }
     return (
         <div className="App">
             <Router basename={process.env.PUBLIC_URL}>
@@ -29,7 +25,6 @@ function App(props) {
                         <Link to='/bio'><li>Bio</li></Link>
                         <Link to='/resume'><li>Resume</li></Link>
                         <Link to='/contact'><li>Contact</li></Link>
-                        <Link onClick={handleBioPage}><li>Show Bios</li></Link>
                     </ul>
                 </nav>
                 <main>
