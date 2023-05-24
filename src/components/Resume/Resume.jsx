@@ -8,7 +8,7 @@ import resume from './mzResume.pdf';
 
 import { PDFDocumentProxy } from 'pdfjs-dist';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
-
+// ******* this workerSrc does not work with create-react-app 5  *********
 // pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 //   'pdfjs-dist/build/pdf.worker.min.js',
 //   import.meta.url,
@@ -18,13 +18,14 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 //     standardFontDataUrl: 'standard_fonts/',
 //   };
 
+//  ***** workerSrc solution came from:
+//  ***** https://codesandbox.io/s/stackoverflow-69097706-react-pdf-demo-s2zmc?file=/src/index.js:112-224
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+
 const Resume = (props) => {
     const [pageNumber, setPageNumber] = useState(1);
     const [numPages, setNumPages] = useState(null);
-    const [res1,setres1]=useState(resume);
-    // function onDocumentLoadSuccess({ numPages: nextNumPages }: PDFDocumentProxy) {
-    //     setNumPages(nextNumPages);
-    //   }
+    const [pdfDoc,setpdfDoc]=useState(resume);
     function onDocumentLoadSuccess({ numPages }) {
         setNumPages(numPages);
         setPageNumber(1);
@@ -47,11 +48,10 @@ const Resume = (props) => {
                         <li>MongoDB</li>
                         <li>SQL</li>
                         <li>Problem Solving</li>
-
                     </ul>
                 </aside>
                 <section className='resume col-8'>
-                    <Document file={res1} className='resDoc' onLoadSuccess={onDocumentLoadSuccess} >
+                    <Document file={pdfDoc} className='resDoc' onLoadSuccess={onDocumentLoadSuccess} >
                         <Page pageNumber={pageNumber} className='resDoc' />
                     </Document>
                 </section>
