@@ -12,10 +12,10 @@ import { PDFDocumentProxy } from 'pdfjs-dist';
 //   'pdfjs-dist/build/pdf.worker.min.js',
 //   import.meta.url,
 // ).toString();
-const options = {
-    cMapUrl: 'cmaps/',
-    standardFontDataUrl: 'standard_fonts/',
-  };
+// const options = {
+//     cMapUrl: 'cmaps/',
+//     standardFontDataUrl: 'standard_fonts/',
+//   };
 
 const Resume = (props) => {
     const [pageNumber, setPageNumber] = useState(1);
@@ -50,7 +50,7 @@ const Resume = (props) => {
                     </ul>
                 </aside>
                 <section className='resume col-8'>
-                    <Document file={res1} className='resDoc' onLoadSuccess={onDocumentLoadSuccess} options={options} >
+                    <Document file={res1} className='resDoc' onLoadSuccess={onDocumentLoadSuccess} >
                         <Page pageNumber={pageNumber} className='resDoc' />
                     </Document>
                 </section>
