@@ -7,7 +7,7 @@
      transform: translate(-50%);
      background-color: antiquewhite;
      border-radius: 25px;
-     padding: 10px 15px;
+     padding: 20px;
      z-index: 550;
      opacity: 0;
      transition: 3s;
@@ -21,7 +21,7 @@
  }
 
  .bio {
-     font-family: fantasy;
+     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
      font-size: 1.5rem;
      font-weight: bold;
      padding: 0 15px;

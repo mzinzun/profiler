@@ -49,6 +49,9 @@ const Resume = (props) => {
                         <li>SQL</li>
                         <li>Problem Solving</li>
                     </ul>
+                    <div>
+                        <button className= "printBtn btn btn-success" type='button' onClick={()=>window.print()}>Print Resume</button>
+                    </div>
                 </aside>
                 <section className='resume col-md-9 p-0'>
                     <Document file={pdfDoc} className='resDoc' onLoadSuccess={onDocumentLoadSuccess} >
