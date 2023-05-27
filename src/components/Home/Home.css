@@ -5,16 +5,30 @@
     background-repeat: no-repeat;
     height: 100%;
     margin: 0;
-    padding: 0;
+    padding: 25px;
     overflow:hidden;
     position: relative;
     transition: all 3s;
+    display: flex;
+    align-items: flex-end;
+    overflow: scroll;
 }
-.img1 {
-    width: clamp(3rem,8vw,6rem);
-    position: absolute;
-    top: -25%;
-    z-index: 1;
-}
+.sampleSites {
+    width: 100%;
+    text-align: center;
+    margin: 20px;
 
+}
+.sampleSites>section {
+    /* max-height: 200px; */
+}
+.sampleSites h3{
+    color:goldenrod;
+    font-family:fantasy;
+}
+.sites {
+    /* height: 100%!important; */
+    width: 90%;
+    border-radius: 10px;
+}
 
