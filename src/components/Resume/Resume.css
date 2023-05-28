@@ -21,6 +21,16 @@
     padding: 0;
     
 }
+.skills2 {
+    padding: 0;
+    height: 75%;
+    
+}
+.skills2 img{
+    padding: 0;
+    max-height: 75px;
+    
+}
 .skills>li {
     font-family: monospace;
     font-size: clamp(.75rem,4vw,1.5rem);

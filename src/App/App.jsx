@@ -14,10 +14,11 @@ function App(props) {
     const [winHeight, setWinHeight] = useState(window.innerHeight);
     useEffect(() => {
         console.log('App Component is Loaded');
+        // <Router basename={process.env.PUBLIC_URL}>
     }, []);
     return (
         <div className="App">
-            <Router basename={process.env.PUBLIC_URL}>
+            <Router basename="/profiler">
                 <Header />
                 <nav>
                     <ul className='menu navbar justify-content-space-evenly;'>
@@ -57,6 +58,8 @@ function App(props) {
                     <div className="col-4 text-end">
                         <Link to="https://linkedin.com/in/michaelzinzun" target="_blank"><i className="fab fa-linkedin fa-2x mx-1"></i></Link>
                         <Link to="https://github.com/mzinzun" target="_blank"><i className="fa-brands fa-github fa-2x mx-1"></i></Link>
+                        <img alt="Javascript" src="https://img.shields.io/badge/-JavaScript-000?&logo=JavaScript" />
+
                     </div>
                 </footer>
             </Router>
