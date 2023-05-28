@@ -6,21 +6,37 @@
     height: 100%;
     margin: 0;
     padding: 25px;
-    overflow:hidden;
-    position: relative;
+    overflow: auto;
     transition: all 3s;
     display: flex;
     align-items: flex-end;
     overflow: scroll;
+    border: solid thin red;
 }
 .sampleSites {
     width: 100%;
     text-align: center;
     margin: 20px;
+    position: relative;
+    z-index: 600;
 
 }
-.sampleSites>section {
-    /* max-height: 200px; */
+.sampleSites img:hover {
+    cursor: pointer;
+}
+.temporaryNotice{
+    position: absolute;
+    background-color:rgba(196, 196, 18,.7);
+    padding: 20px;
+    border-radius: 15px ;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 60%;
+    max-height: 25%;
+    z-index: 650;
+    
+
 }
 .sampleSites h3{
     color:goldenrod;

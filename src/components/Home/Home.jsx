@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import {Link} from 'react-router-dom'
 import "./Home.css";
 import site1 from "./fontawesome.png";
 import site2 from "./mikesRemodel.png";
@@ -13,31 +14,43 @@ function Home(props) {
         const bioPage = document.querySelector('.home');
         setHomeOpacity(1);
         props.setlogosOpacity(1);
-    }, [])
-    return (
-        <>
-            <div className='home' style={{ opacity: homeOpacity }}>
+    }, []);
+    const msg1 = console.log('msg1 clicked');
+    const[msg,setMesg]= useState(msg1);
+    const[display,setDisplay] = useState('none');
+    const[site, setSite]= useState('')
+    function handleDisplay(e){
+        setDisplay('block');
+        console.log(e.target.attributes.dataname.value);
 
+        setSite(e.target.attributes.dataname.value)
+
+    }
+    return (
+            <div className='home' style={{ opacity: homeOpacity }}>
+                <div className="temporaryNotice text-center" style={{display: display}}>
+                    <h3 className="text-center p-4">Access to {site} Coming Soon</h3>
+                    <button className="btn btn-info"type ="button" onClick={()=>{setDisplay('none')}}>OK</button>
+                </div>
                 <div className="sampleSites row m-0 p-0 ">
-                    <section className="col-md-3">
+                    <section className="col-md-3" >
                         <h3>FontAwesome App</h3>
-                        <img src={site1} className='sites' />
+                        <img src={site1} className='sites' dataname = "FontAwesome App" onClick={handleDisplay}/>
                     </section>
                     <section className="col-md-3">
                         <h3>Mikes Remodeling</h3>
-                        <img src={site2} className='sites' />
+                        <img src={site2} className='sites' dataname = "Mike's Remodeling Site" onClick={handleDisplay}/>
                     </section>
                     <section className="col-md-3">
                         <h3>Zincom Web</h3>
-                        <img src={site3} className='sites' />
+                        <img src={site3} className='sites' dataname = "Zincom Web Site" onClick={handleDisplay}/>
                     </section>
                     <section className="col-md-3">
                         <h3>Zincom CS</h3>
-                        <img src={site4} className='sites' />
+                        <img src={site4} className='sites' dataname = "Zincom Computer Solution Site" onClick={handleDisplay}/>
                     </section>
                 </div>
             </div>
-        </>
 
     )
 }
