@@ -37,7 +37,7 @@ const Resume = (props) => {
     return (
         <>
             <div className='resumePage row m-0 p-0 '>
-                <aside className='col-md-3 bg text-center'>
+                <aside className='col-md-3'>
                     <h2 className='text-center border-bottom text-success'>Skills</h2>
                     <ul className="skills">
                         <li><img alt="CSS" src="https://img.shields.io/badge/Style-CSS-informational?style=flat&logo=css3&logoColor=white&color=4AB197" />CSS</li>
@@ -50,15 +50,6 @@ const Resume = (props) => {
                         <li>SQL</li>
                         <li>Problem Solving</li>
                     </ul>
-                    <div className="skills2 d-flex flex-column w-90">
-                        
-                        
-                        
-                        <img className="col-1 w-100" alt="github actions" src="https://img.shields.io/badge/-Github_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white" />
-                        <img className="col-1 w-100" alt="git" src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white" />
-                       
-                        
-                    </div>
                     <div>
                         <button className="printBtn btn btn-success" type='button' onClick={() => window.print()}>Print Resume</button>
                     </div>
