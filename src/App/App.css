@@ -49,7 +49,7 @@ main{
   z-index: 500;
 }
 .img1 {
-    width: clamp(3rem,8vw,6rem);
+    width: clamp(2rem,3vw,6rem);
     position: absolute;
     top: -25%;
     z-index: 1;
@@ -91,7 +91,20 @@ footer{
 .fa-linkedin {
   color: #0072b1;
 }
-
+/* media query for all pages */
+@media (max-width: 640px){
+  .home {
+      background-size: 15rem;
+  }
+  .resumePage{
+    overflow: auto;
+  }
+  .resume {
+    overflow: hidden;
+    height: auto;
+  }
+  
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
