@@ -54,11 +54,10 @@ function App(props) {
                     </div>
                 </main>
                 <footer className="row m-0 p-0 px-2 justify-content-between align-items-center">
-                    <h6 className="col-4 text-start">copyright &copy;2023 - Designed by Michael Zinzun</h6>
-                    <div className="col-4 text-end">
+                    <h6 className="footerText col-9">copyright &copy;2023 - Designed by Michael Zinzun</h6>
+                    <div className="col-3 text-end">
                         <Link to="https://linkedin.com/in/michaelzinzun" target="_blank"><i className="fab fa-linkedin fa-2x mx-1"></i></Link>
                         <Link to="https://github.com/mzinzun" target="_blank"><i className="fa-brands fa-github fa-2x mx-1"></i></Link>
-                        <img alt="Javascript" src="https://img.shields.io/badge/-JavaScript-000?&logo=JavaScript" />
 
                     </div>
                 </footer>

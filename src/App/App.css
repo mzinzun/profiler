@@ -56,6 +56,10 @@ main{
     opacity: 1;
     transition: all 2s;
 }
+.footerText {
+  font-size: clamp(.65rem,2vw,1.25rem);
+  text-align: left;
+}
 @keyframes img0Floater {0%{top: -30%;}100% {top: 100%;}}
 @keyframes img1Floater {0%{top: -30%;}100% {top: 100%;}}
 @keyframes img2Floater {0%{top: -30%;}100% {top: 100%;}}

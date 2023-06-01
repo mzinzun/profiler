@@ -20,7 +20,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 
 //  ***** workerSrc solution came from:
 //  ***** https://codesandbox.io/s/stackoverflow-69097706-react-pdf-demo-s2zmc?file=/src/index.js:112-224
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+// pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 const Resume = (props) => {
     const [pageNumber, setPageNumber] = useState(1);

@@ -32,22 +32,22 @@ function Home(props) {
                     <h3 className="text-center p-4">Access to {site} Coming Soon</h3>
                     <button className="btn btn-info"type ="button" onClick={()=>{setDisplay('none')}}>OK</button>
                 </div>
-                <div className="sampleSites row m-0 p-0 ">
-                    <section className="col-md-3" >
+                <div className="sampleSites row m-0 p-4 align-items-end">
+                    <section className="col-md-3 mt-5 mt-md-0" >
                         <h3>FontAwesome App</h3>
-                        <img src={site1} className='sites' dataname = "FontAwesome App" onClick={handleDisplay}/>
+                        <img src={site1} className='px-5 px-md-0 sites' dataname = "FontAwesome App" onClick={handleDisplay}/>
                     </section>
                     <section className="col-md-3">
                         <h3>Mikes Remodeling</h3>
-                        <img src={site2} className='sites' dataname = "Mike's Remodeling Site" onClick={handleDisplay}/>
+                        <img src={site2} className='px-5 px-md-0 sites' dataname = "Mike's Remodeling Site" onClick={handleDisplay}/>
                     </section>
                     <section className="col-md-3">
                         <h3>Zincom Web</h3>
-                        <img src={site3} className='sites' dataname = "Zincom Web Site" onClick={handleDisplay}/>
+                        <img src={site3} className='px-5 px-md-0 sites' dataname = "Zincom Web Site" onClick={handleDisplay}/>
                     </section>
                     <section className="col-md-3">
                         <h3>Zincom CS</h3>
-                        <img src={site4} className='sites' dataname = "Zincom Computer Solution Site" onClick={handleDisplay}/>
+                        <img src={site4} className='px-5 px-md-0 sites' dataname = "Zincom Computer Solution Site" onClick={handleDisplay}/>
                     </section>
                 </div>
             </div>
@@ -56,6 +56,3 @@ function Home(props) {
 }
 export default Home;
 
-function SampleSites(props) {
-
-}
