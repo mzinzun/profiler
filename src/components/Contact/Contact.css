@@ -1,0 +1,9 @@
+.contactPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form{
+    position: relative;
+    z-index: 650;
+}

@@ -1,5 +1,5 @@
 .home {
-    background-image: url("../images/self3.png");
+    background-image: url("../images/myImage10.png");
     background-size: 45rem;
     background-position: center top;
     background-repeat: no-repeat;
@@ -47,7 +47,7 @@
 .sampleSites h3{
     color:goldenrod;
     font-family:fantasy;
-    font-size: clamp(1rem,2vw,1.5rem)!important;
+    font-size: clamp(1.5rem,2vw,2.5rem)!important;
 
 }
 

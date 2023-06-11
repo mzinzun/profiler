@@ -11,11 +11,10 @@
    
 }
 .printBtn{
-    font-size: clamp(.75rem,4vw,1.5rem);
+    font-size: clamp(1rem,2vw,1.5rem);
     position: absolute;
     bottom: 10px;
     right: 10px;
-    /* transform: translate(-50%); */
 }
 .skills {
     padding: 0;
@@ -45,7 +44,8 @@
     display: none;
 } */
 .react-pdf__Page__canvas {
-width: 100% !important;
+width: 100%!important;;
+max-width:10in!important;
 height: auto !important;
 }
 @media print {
