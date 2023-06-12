@@ -1,6 +1,6 @@
 .home {
     background-image: url("../images/myImage10.png");
-    background-size: 45rem;
+    background-size: 45%;
     background-position: center top;
     background-repeat: no-repeat;
     height: 100%;
@@ -22,6 +22,14 @@
     padding: 25px;
     z-index: 600;
     overflow: scroll;
+}
+@media(min-height: 1024px) {
+    .home {
+        background-size: 75%;
+    }
+    .sampleSites {
+        padding-bottom: 10% !important;
+    }
 }
 .sampleSites>section {
     padding: 25px 10px;

@@ -50,12 +50,15 @@ const Resume = (props) => {
                         <li>SQL</li>
                         <li>Problem Solving</li>
                     </ul>
-                    <div>
-                        <button className="printBtn btn btn-success" type='button' onClick={() => window.print()}>Print Resume</button>
-                    </div>
+                    <h2 className='text-center border-bottom text-success'>Certifications</h2>
+                    <ul>
+                        <li>JavaScript Algorithms & Data Structures</li>
+                        <li>Web Development Fundamentals</li>
+                    </ul>
                 </aside>
                 <section className='resume col-md-9 p-0'>
                     <iframe  src={pdfDoc} >
+                        {/* <Document> component pdf viewer gets blurry on resize */}
                     {/* <Document file={pdfDoc} className='resDoc' onLoadSuccess={onDocumentLoadSuccess} >
                         <Page pageNumber={pageNumber} className='resDoc' />
                     </Document> */}
