@@ -37,7 +37,10 @@ main{
   flex: 1;
   margin: 0;
   padding: 0;
-  background-color: #3f3605;
+  /* background-color: olive; */
+  /* background-color: #3F364C; */
+  /* background-color: #3f3605; */
+  background: radial-gradient(circle,#686805, #3f3605 75%);
   overflow: hidden;
 }
 .fillerDiv{
@@ -101,7 +104,7 @@ footer{
   }
   .resume {
     overflow: hidden;
-    height: auto;
+    /* height: auto; */
   }
   
 }
