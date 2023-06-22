@@ -1,4 +1,5 @@
 .header {
+    min-height: 20%;
     background-image: url("../images/3DLight.jpg");
     background-size: 105% 105%;
     background-repeat: no-repeat;
