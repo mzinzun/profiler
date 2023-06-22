@@ -6,7 +6,7 @@
     position: relative;
     z-index: 700;
     border: thin solid white;
-    padding: 20px;
+    padding: 30px !important;
     color: goldenrod;
     overflow: auto;
 }
@@ -14,26 +14,37 @@
     font-family: cursive;
     font-size: 3rem;
 }
-.form{
-    position: relative;
-    z-index: 650;
-}
-.contactMain {
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-}
 .contactAside {
     /* border: thin solid red; */
-    flex: 4;
-    padding: 10px;
+    background-color: rgba(0,0,128,.4);
+    padding: 0 30px;
+    border-radius: 3%;
 }
 .contactAside>blockquote {
     font-size: 1.5rem;
     padding: 10px;
 }
+.contactForm{
+    position: relative;
+    z-index: 650;
+    border: thin solid navy;
+    border-radius: 3%;
+}
+.contactForm button {
+    background-color: rgba(0,0,128,.4);
+    color: goldenrod;
+}
+.contactForm button:hover {
+    background-color: goldenrod;
+    color: rgb(0,0,128);
+}
+.contactMain {
+    
+    height: 100%;
+}
+
 .contactForm {
     /* border: thin solid blue; */
-    flex: 6;
+    
     font-size: 1.5rem;
 }
