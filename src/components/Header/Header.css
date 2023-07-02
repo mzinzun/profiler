@@ -1,29 +1,26 @@
 .header {
     min-height: 20%;
-    background-image: url("../images/3DLight.jpg");
     background-size: 105% 105%;
     background-repeat: no-repeat;
     background-position:center;
     padding: 20px 10px 10px 10px;
     text-align: center;
     font-family: Fantasy;
-    color: navy;
+    
 }
 .header h1 {
     font-weight: bolder;
     font-size: clamp(2rem,6vw,4rem);
     padding-top: 15px; /*to compensate for font overflow */
+    text-shadow: 1px 1px 2px darkgoldenrod, 0 0 1rem white, 0 0 2rem beige;
 }
 .conicHeader{
-    /* background: linear-gradient(to right,#b3d0fa 10%,#0c63e4 20%, #3d4858 20%); */
     animation: 3s ease-in .5s infinite conicHeader;
 }
 .header h2{
-    /* #b3d0fa, #0c63e4, #3d4858 */
     font-size: clamp(1rem,4vw,2.5rem);
     font-weight: bolder;
     animation: 5s ease-in .5s infinite conicHeader;
-    
 }
 @keyframes conicHeader{
     0%{
@@ -31,11 +28,9 @@
     }
     35% {
         color: rgb(116, 57, 138);
-        /* color: #0c63e4; */
     }
     65% {
         color: gold;
-        /* color: #3d4858; */
     }
     100% {
         color: #b3d0fa;

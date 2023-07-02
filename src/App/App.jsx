@@ -20,8 +20,8 @@ function App(props) {
         <div className="App">
             <Router basename="/profiler">
                 <Header />
-                <nav>
-                    <ul className='menu navbar justify-content-space-evenly;'>
+                <nav class='testNav'>
+                    <ul className='menu navbar justify-content-end'>
                         <Link to='/home'><li>Home</li></Link>
                         <Link to='/bio'><li>Bio</li></Link>
                         <Link to='/resume'><li>Resume</li></Link>
