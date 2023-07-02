@@ -9,20 +9,20 @@ import site4 from "./zincom.png";
 function Home(props) {
 
     const [homeOpacity, setHomeOpacity] = useState(0);
+    // const msg1 = console.log('msg1 clicked');
+    // const[msg,setMesg]= useState(msg1);
+    const[display,setDisplay] = useState('none');
+    const[site, setSite]= useState('')
     useEffect(() => {
         console.log('Home Component is Loaded');
         const bioPage = document.querySelector('.home');
         setHomeOpacity(1);
         props.setlogosOpacity(1);
     }, []);
-    const msg1 = console.log('msg1 clicked');
-    const[msg,setMesg]= useState(msg1);
-    const[display,setDisplay] = useState('none');
-    const[site, setSite]= useState('')
+    
     function handleDisplay(e){
         setDisplay('block');
         console.log(e.target.attributes.dataname.value);
-
         setSite(e.target.attributes.dataname.value)
 
     }
