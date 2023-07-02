@@ -1,8 +1,7 @@
 {
   "files": {
-    "main.css": "/profiler/static/css/main.115308f5.css",
-    "main.js": "/profiler/static/js/main.0c202c65.js",
-    "static/media/3DLight.jpg": "/profiler/static/media/3DLight.69e503c06cf78d1b3241.jpg",
+    "main.css": "/profiler/static/css/main.82911ad2.css",
+    "main.js": "/profiler/static/js/main.c47eec3a.js",
     "static/media/pdf.worker.js": "/profiler/static/media/pdf.worker.7172a025167de5d78c2b.js",
     "static/media/capstone.png": "/profiler/static/media/capstone.43c3f77c68e97ce514db.png",
     "static/media/mikesRemodel.png": "/profiler/static/media/mikesRemodel.923f8f9e503d8f2f6ae2.png",
@@ -14,13 +13,14 @@
     "static/media/bootstrap2.png": "/profiler/static/media/bootstrap2.6d9dddb021e4cc864369.png",
     "static/media/express2.png": "/profiler/static/media/express2.fd29317eb0e9f0776f1c.png",
     "static/media/react2.png": "/profiler/static/media/react2.9b0ba0c495dda46dd23d.png",
+    "static/media/goldfoil.jpg": "/profiler/static/media/goldfoil.b5d29cba2b902cf178fc.jpg",
     "static/media/nodejs2.png": "/profiler/static/media/nodejs2.d413612a1029432d006e.png",
     "index.html": "/profiler/index.html",
-    "main.115308f5.css.map": "/profiler/static/css/main.115308f5.css.map",
-    "main.0c202c65.js.map": "/profiler/static/js/main.0c202c65.js.map"
+    "main.82911ad2.css.map": "/profiler/static/css/main.82911ad2.css.map",
+    "main.c47eec3a.js.map": "/profiler/static/js/main.c47eec3a.js.map"
   },
   "entrypoints": [
-    "static/css/main.115308f5.css",
-    "static/js/main.0c202c65.js"
+    "static/css/main.82911ad2.css",
+    "static/js/main.c47eec3a.js"
   ]
 }
