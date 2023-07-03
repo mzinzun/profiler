@@ -44,11 +44,9 @@ function Contact(props) {
     }
     function submitData(e) {
         e.preventDefault();
-        console.log('form preparing to submit using EmailJS', formData,e.target);
-        // this.contact_number.value = Math.random() * 100000 | 0;
-        // emailjs.init('PWyLeDbgJdQvzF8PB');
-        //  // https://dashboard.emailjs.com/admin/account
-        
+        console.log('form preparing to submit using EmailJS', formData,e.target);         
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init('PWyLeDbgJdQvzF8PB');
         emailjs.sendForm('service_tpnhujg', 'profiler_contact_form', e.target)
                     .then(function() {
                         alert('email sent succesfully!');
