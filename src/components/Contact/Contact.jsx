@@ -15,7 +15,8 @@ function Contact(props) {
     useEffect(() => {
         console.log('Contact Component Loaded');
         props.setlogosOpacity(.2);
-       
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init('PWyLeDbgJdQvzF8PB');
 
     }, []);
     function handleUpdateFormData(e) {
@@ -45,8 +46,7 @@ function Contact(props) {
     function submitData(e) {
         e.preventDefault();
         console.log('form preparing to submit using EmailJS', formData,e.target);         
-        // https://dashboard.emailjs.com/admin/account
-        emailjs.init('PWyLeDbgJdQvzF8PB');
+       
         emailjs.sendForm('service_tpnhujg', 'profiler_contact_form', e.target)
                     .then(function() {
                         alert('email sent succesfully!');
