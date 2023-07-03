@@ -118,8 +118,8 @@ function Contact(props) {
                             onChange={handleUpdateFormData}
                             placeholder='Leave a comment'></textarea>
                     </div>
-                    <div className='row justify-content-end w-75'>
-                        <button className='btn col-2' type='submit'>Submit</button>
+                    <div className='row justify-content-center'>
+                        <button className='btn col-3' type='submit'>Submit</button>
                     </div>
                 </form>
             </div>

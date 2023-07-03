@@ -20,7 +20,7 @@ function App(props) {
         <div className="App">
             <Router basename="/profiler">
                 <Header />
-                <nav class='testNav'>
+                <nav >
                     <ul className='menu navbar justify-content-start'>
                         <Link to='/home'><li>Home</li></Link>
                         <Link to='/bio'><li>Bio</li></Link>
