@@ -62,7 +62,7 @@ function Contact(props) {
     
     return (
         <div className="contactPage ">
-            <h1>Reach Out</h1>
+            <h1 class='title'>Reach Out</h1>
             <div className='contactMain row m-0 p-0 justify-content-around'>
                 <section className="contactAside col-lg-5 col ">
                     <div className='m-3 p-3'>
@@ -70,7 +70,7 @@ function Contact(props) {
                         <h3 className='text-center'><b><em>phone: 323-691-6510</em></b></h3>
                     </div>
 
-                    <h2>What I Offer</h2>
+                    <h2 class='title'>What I Offer</h2>
                     <blockquote>I am a decisive problem solver trained in full-stack web development using HTML5, CSS3, Javascript, JQuery, React,
                         and NodeJS. Databases include MongoDB and SQL. Also familiar with WAN/LAN network design (Ethernet/wireless).  I work well in team environments and adapt effectively to new technologies.</blockquote>
 
