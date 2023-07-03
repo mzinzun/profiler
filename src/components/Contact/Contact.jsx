@@ -1,5 +1,6 @@
-import { useEffect, useState } from 'react';
+import React,{ useEffect, useState, useRef } from 'react';
 import './Contact.css';
+import emailjs from '@emailjs/browser'
 
 function Contact(props) {
     const emptyForm = {
@@ -10,6 +11,13 @@ function Contact(props) {
         comment: '',
     }
     const [formData, setFormData] = useState(emptyForm);
+    const form = useRef();
+    useEffect(() => {
+        console.log('Contact Component Loaded');
+        props.setlogosOpacity(.2);
+        emailjs.init('PWyLeDbgJdQvzF8PB');
+
+    }, []);
     function handleUpdateFormData(e) {
         let dataUpdate = { ...formData };
         console.log('element data', e.target.id)
@@ -36,14 +44,22 @@ function Contact(props) {
     }
     function submitData(e) {
         e.preventDefault();
-        console.log('form preparing to submit using EmailJS', formData);
+        console.log('form preparing to submit using EmailJS', formData,e.target);
+        // this.contact_number.value = Math.random() * 100000 | 0;
+        
+         // https://dashboard.emailjs.com/admin/account
+        
+        emailjs.sendForm('service_tpnhujg', 'profiler_contact_form', e.target)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+        
+
         
     }
-    useEffect(() => {
-        console.log('Contact Component Loaded');
-        props.setlogosOpacity(.2);
-
-    }, []);
+    
     return (
         <div className="contactPage ">
             <h1>Reach Out</h1>

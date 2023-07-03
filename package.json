@@ -5,6 +5,8 @@
   "private": true,
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@emailjs/browser": "^3.11.0",
+    "email-js": "^2.0.2",
     "pdf-dist": "^1.0.0",
     "pdfjs-dist": "^3.7.107",
     "react": "^18.2.0",
