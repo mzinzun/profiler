@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
 import Header from "../components/Header";
 import Home from "../components/Home";
@@ -16,23 +17,33 @@ function App(props) {
         console.log('App Component is Loaded');
         // <Router basename={process.env.PUBLIC_URL}>
     }, []);
+    // const nav = document.querySelector('nav');
+    // const toggleButton = document.querySelector('#toggle-button');
+
+    // toggleButton.addEventListener('click', () => {
+    //   nav.classList.toggle('collapsed');
+    // });
+
     return (
         <div className="App">
             <Router basename="/profiler">
                 <Header />
-                <nav >
-                    <ul className='menu navbar justify-content-start'>
-                        <Link to='/home'><li>Home</li></Link>
-                        <Link to='/bio'><li>Bio</li></Link>
-                        <Link to='/resume'><li>Resume</li></Link>
-                        <Link to='/contact'><li>Contact</li></Link>
-                    </ul>
-                </nav>
+                <Navbar expand="sm">
+                    <Link className="menuItem" to="/home">Portfolio</Link>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="mr-auto">
+                            <Link className="menuItem" to="/bio">Bio</Link>
+                            <Link className="menuItem" to="/resume">Resume</Link>
+                            <Link className="menuItem" to="/contact">Contact</Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Navbar>
                 <main>
                     <Routes>
                         <Route path="/" element={<Home setlogosOpacity={setlogosOpacity} logosOpacity={logosOpacity} />} />
                         <Route path="/home" element={<Home setlogosOpacity={setlogosOpacity} logosOpacity={logosOpacity} />} />
-                        <Route path="/bio" element={<Bio logosOpacity = {logosOpacity} setlogosOpacity = {setlogosOpacity} />} />
+                        <Route path="/bio" element={<Bio logosOpacity={logosOpacity} setlogosOpacity={setlogosOpacity} />} />
                         <Route path="/resume" element={<Resume setlogosOpacity={setlogosOpacity} logosOpacity={logosOpacity} />} />
                         <Route path="/contact" element={<Contact setlogosOpacity={setlogosOpacity} logosOpacity={logosOpacity} />} />
                         <Route path="/*" element={<Home />} />

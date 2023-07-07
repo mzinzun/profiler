@@ -11,7 +11,7 @@
   display: flex;
   flex-direction: column;
 }
-li {
+li, .menuItem {
   padding: 0 5px;
   list-style: none;
   font-size: clamp(1.25rem, 3.5vh, 4rem);
@@ -26,14 +26,37 @@ li {
 a {
   text-decoration: none;
 }
-nav {
+/* nav {
   padding: 0;
   margin: 0;
+} */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
+
+li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/* a {
+  color: #333;
+  text-decoration: none;
+} */
 .navbar {
   padding: 10px 2%;
   margin: 0;
 }
+button[aria-controls='basic-navbar-nav'] {
+  border: thin solid hsl(34, 78%, 91%) !important;
+  background-color:hsl(33, 78%, 91%,.3);
+}
+
+
+
+
 main {
   position: relative;
   flex: 1;
