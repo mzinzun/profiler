@@ -1,4 +1,4 @@
-import React,{ useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import './Contact.css';
 import emailjs from '@emailjs/browser'
 
@@ -11,13 +11,14 @@ function Contact(props) {
         comment: '',
     }
     const [formData, setFormData] = useState(emptyForm);
+    const [contactOpacity, setContactOpacity] = useState(0);
     const form = useRef();
     useEffect(() => {
         console.log('Contact Component Loaded');
-        props.setlogosOpacity(.2);
         // https://dashboard.emailjs.com/admin/account
         emailjs.init('PWyLeDbgJdQvzF8PB');
-
+        props.setlogosOpacity(.2);
+        setContactOpacity(.7);
     }, []);
     function handleUpdateFormData(e) {
         let dataUpdate = { ...formData };
@@ -45,35 +46,29 @@ function Contact(props) {
     }
     function submitData(e) {
         e.preventDefault();
-        console.log('form preparing to submit using EmailJS', formData,e.target);         
-       
+        console.log('form preparing to submit using EmailJS', formData, e.target);
         emailjs.sendForm('service_tpnhujg', 'profiler_contact_form', e.target)
-                    .then(function() {
-                        alert('email sent succesfully!');
-                        e.target.reset();
-                        setFormData(emptyForm);   
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                    });
-       
-
-        
+            .then(function () {
+                alert('email sent succesfully!');
+                e.target.reset();
+                setFormData(emptyForm);
+            }, function (error) {
+                console.log('FAILED...', error);
+            });
     }
-    
     return (
-        <div className="contactPage ">
+        <div className="contactPage "
+            style={{ opacity: contactOpacity }}>
             <h1 class='title'>Reach Out</h1>
             <div className='contactMain row m-0 p-0 justify-content-around'>
                 <section className="contactAside col-lg-5 col ">
                     <div className='m-3 p-3'>
-                        <h3 className='text-center'><b><em>email: mzinzun3@outlook.com</em></b></h3>
-                        <h3 className='text-center'><b><em>phone: 323-691-6510</em></b></h3>
+                        <h4 className='text-center'><b><em>email: mzinzun3@outlook.com</em></b></h4>
+                        <h4 className='text-center'><b><em>phone: 323-691-6510</em></b></h4>
                     </div>
 
                     <h2 class='title'>What I Offer</h2>
-                    <blockquote>I am a decisive problem solver trained in full-stack web development using HTML5, CSS3, Javascript, JQuery, React,
-                        and NodeJS. Databases include MongoDB and SQL. Also familiar with WAN/LAN network design (Ethernet/wireless).  I work well in team environments and adapt effectively to new technologies.</blockquote>
-
+                    <blockquote>I am a decisive problem solver trained in full-stack web development using HTML5, CSS3, Javascript, JQuery, React, and NodeJS. Databases include MongoDB and SQL. Also familiar with WAN/LAN network design (Ethernet/wireless).  I work well in team environments and adapt effectively to new technologies.</blockquote>
                 </section>
                 <form className="contactForm col-lg-5 " onSubmit={submitData}>
                     <div className="form-group row m-0 p-0">

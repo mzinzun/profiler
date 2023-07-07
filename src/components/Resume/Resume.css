@@ -1,74 +1,84 @@
-.resumePage{
+.resumePage {
     position: relative;
     z-index: 550;
     height: 100%;
     overflow: auto;
+    transition: opacity 1s;
 }
-.resumePage>aside{
+
+.resumePage>aside {
     padding: 20px;
-    background-color: rgba(250, 250, 250,.05);
+    background-color: rgba(250, 250, 250, .05);
     position: relative;
     overflow-x: auto;
     height: 100%;
 }
-.printBtn{
-    font-size: clamp(1rem,2vw,1.5rem);
+
+.printBtn {
+    font-size: clamp(1rem, 2vw, 1.5rem);
     position: absolute;
     bottom: 10px;
     right: 10px;
 }
+
 .skills {
     padding: 0;
     padding-left: 2rem;
-    
 }
+
 .skills2 {
     padding: 0;
     height: 75%;
-    
 }
-.skills2 img{
+
+.skills2 img {
     padding: 0;
     max-height: 75px;
-    
 }
-.resumePage ul {
 
-}
-.resumePage li { 
+.resumePage li {
     font-family: monospace;
-    font-size: clamp(1rem,3vw,1.5rem);
+    font-size: clamp(1rem, 3vw, 1.5rem);
     color: navy;
     list-style-type: disc;
 }
+
 .resume {
     overflow: auto;
     height: 100%;
 }
+
 iframe {
     width: 100%;
     height: 100%;
     position: relative;
     z-index: 660;
 }
+
 /* .react-pdf__Page__textContent, .annotationLayer{
     background-color: gold;
     display: none;
 } */
 .react-pdf__Page__canvas {
-width: 100%!important;;
-max-width:10in!important;
-height: auto !important;
+    width: 100% !important;
+    ;
+    max-width: 10in !important;
+    height: auto !important;
 }
-@media(max-width: 600px){
-    .resumePage>aside{
+
+@media(max-width: 600px) {
+    .resumePage>aside {
         padding: 2px;
         height: 50%;
     }
-    
 }
+
 @media print {
-    aside,nav,footer,header {
+
+    aside,
+    nav,
+    footer,
+    header {
         display: none !important;
     }
 }

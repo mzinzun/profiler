@@ -5,7 +5,6 @@ function Bio(props) {
     const [bioOpacity, setBioOpacity] = useState(0);
     useEffect(() => {
         console.log('Bio Component Loaded');
-        const bioPage = document.querySelector('.bioPage');
         props.setlogosOpacity(.2);
         setBioOpacity(.7);
     }, []);
@@ -14,10 +13,9 @@ function Bio(props) {
     });
     return (
         <>
-            <section className='bioPage' style={{
-                opacity: bioOpacity
-            }}>
-                <h1>About Me:</h1>
+            <section className='bioPage'
+                style={{ opacity: bioOpacity }}>
+                <h2>About Me:</h2>
                 <blockquote className='bio'>
                     I am a highly motivated individual who takes pride in my problem-solving skills. With extensive experience in the IT industry, I have developed a strong foundation in Information Technology. This background enables me to quickly grasp new technologies and programming languages efficiently. Over the years, I have discovered that I excel at helping others comprehend complex concepts and firmly believe that anyone can learn how to code.
                 </blockquote>

@@ -44,10 +44,10 @@ function App(props) {
                     </Routes>
                     <div className='fillerDiv'>
                         {logos.map((el, idx) => {
+                            // set positions of floating logos
                             let lefty = Math.floor(Math.random() * winWidth);
                             let timer = (Math.random() * 3) + 4
                             let delayer = (Math.random() * 3) + 1;
-                            // console.log(delayer)
                             return (
                                 <img key={idx} className='img1' src={require(`./images/logos/${logos[idx]}`)} alt='bootstrap' style={{
                                     left: lefty,

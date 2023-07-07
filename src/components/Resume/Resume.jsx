@@ -26,6 +26,7 @@ const Resume = (props) => {
     const [pageNumber, setPageNumber] = useState(1);
     const [numPages, setNumPages] = useState(null);
     const [pdfDoc, setpdfDoc] = useState(resume);
+    const [resumeOpacity, setResumeOpacity] = useState(0);
     function onDocumentLoadSuccess({ numPages }) {
         setNumPages(numPages);
         setPageNumber(1);
@@ -33,19 +34,21 @@ const Resume = (props) => {
     useEffect(() => {
         console.log('Resume Component loaded');
         props.setlogosOpacity(.2);
+        setResumeOpacity(.7);
     }, [props])
     return (
         <>
-            <div className='resumePage row m-0 p-0 '>
+            <div className='resumePage row m-0 p-0 '
+                style={{ opacity: resumeOpacity }}>
                 <aside className='col-md-3'>
                     <h2 className='text-center border-bottom text-success'>Skills</h2>
                     <ul className="skills">
                         <li><img alt="CSS" src="https://img.shields.io/badge/Style-CSS-informational?style=flat&logo=css3&logoColor=white&color=4AB197" /> CSS</li>
-                        <li><img  alt="html5" src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" /> HTML</li>
+                        <li><img alt="html5" src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" /> HTML</li>
                         <li><img src="https://img.shields.io/badge/-JavaScript-000?&logo=JavaScript" /> Javascript</li>
-                        <li><img  alt="Nodejs" src="https://img.shields.io/badge/-Nodejs-43853d?style=flat-square&logo=Node.js&logoColor=white" /> NodeJS/Express</li>
-                       
-                        <li><img  alt="React" src="https://img.shields.io/badge/-React-45b8d8?style=flat-square&logo=react&logoColor=white" /> ReactJS</li>
+                        <li><img alt="Nodejs" src="https://img.shields.io/badge/-Nodejs-43853d?style=flat-square&logo=Node.js&logoColor=white" /> NodeJS/Express</li>
+
+                        <li><img alt="React" src="https://img.shields.io/badge/-React-45b8d8?style=flat-square&logo=react&logoColor=white" /> ReactJS</li>
                         <li><img alt="MongoDB" src="https://img.shields.io/badge/-MongoDB-13aa52?style=flat-square&logo=mongodb&logoColor=white" /> MongoDB</li>
                         <li>PHP</li>
                         <li>SQL</li>
@@ -58,9 +61,9 @@ const Resume = (props) => {
                     </ul>
                 </aside>
                 <section className='resume col-md-9 p-0'>
-                    <iframe  src={pdfDoc} >
+                    <iframe src={pdfDoc} >
                         {/* <Document> component pdf viewer gets blurry on resize */}
-                    {/* <Document file={pdfDoc} className='resDoc' onLoadSuccess={onDocumentLoadSuccess} >
+                        {/* <Document file={pdfDoc} className='resDoc' onLoadSuccess={onDocumentLoadSuccess} >
                         <Page pageNumber={pageNumber} className='resDoc' />
                     </Document> */}
                     </iframe>
