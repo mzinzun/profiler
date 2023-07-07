@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
 import Header from "../components/Header";
 import Home from "../components/Home";
@@ -17,12 +17,6 @@ function App(props) {
         console.log('App Component is Loaded');
         // <Router basename={process.env.PUBLIC_URL}>
     }, []);
-    // const nav = document.querySelector('nav');
-    // const toggleButton = document.querySelector('#toggle-button');
-
-    // toggleButton.addEventListener('click', () => {
-    //   nav.classList.toggle('collapsed');
-    // });
 
     return (
         <div className="App">
