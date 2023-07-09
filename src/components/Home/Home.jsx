@@ -16,6 +16,8 @@ function Home(props) {
     useEffect(() => {
         console.log('Home Component is Loaded');
         const bioPage = document.querySelector('.home');
+        const sampleSites = [...document.querySelectorAll('.sampleSites>section')]
+        console.log((sampleSites[0]).attributes.dataname.value);
         setHomeOpacity(1);
         props.setlogosOpacity(1);
     }, []);
@@ -33,19 +35,19 @@ function Home(props) {
                     <button className="btn btn-info"type ="button" onClick={()=>{setDisplay('none')}}>OK</button>
                 </div>
                 <div className="sampleSites row p-0 m-0 align-items-end justify-content-around">
-                    <section className="col-md-3 mt-5 mt-md-0 px-5 px-md-2" >
-                        <h3>FontAwesome App</h3>
-                        <img src={site1} className=' px-md-0 sites' dataname = "FontAwesome App" onClick={handleDisplay}/>
+                    <section className="col-md-3 mt-5 mt-md-0 px-5 px-md-2" dataname='fontawesome'>
+                        <Link to="https://mzinzun.github.io/fontawesome/" target="_blank"><h3>FontAwesome App</h3>
+                        <img src={site1} className=' px-md-0 sites' dataname = "FontAwesome App" /></Link>
                     </section>
-                    <section className="col-md-3 px-5 px-md-2">
+                    <section className="col-md-3 px-5 px-md-2" dataname='remodeling'>
                         <h3>Mikes Remodeling</h3>
                         <img src={site2} className='px-md-0 sites' dataname = "Mike's Remodeling Site" onClick={handleDisplay}/>
                     </section>
-                    <section className="col-md-3 px-5 px-md-2">
+                    <section className="col-md-3 px-5 px-md-2" dataname='zincomWeb'>
                         <h3>Zincom Web</h3>
                         <img src={site3} className=' px-md-0 sites' dataname = "Zincom Web Site" onClick={handleDisplay}/>
                     </section>
-                    <section className="col-md-3 px-5 px-md-2">
+                    <section className="col-md-3 px-5 px-md-2" dataname='zincomCS'>
                         <h3>Zincom CS</h3>
                         <img src={site4} className='px-md-0 sites' dataname = "Zincom Computer Solution Site" onClick={handleDisplay}/>
                     </section>
