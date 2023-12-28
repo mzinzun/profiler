@@ -16,8 +16,11 @@ function Home(props) {
     useEffect(() => {
         console.log('Home Component is Loaded');
         const bioPage = document.querySelector('.home');
-        const sampleSites = [...document.querySelectorAll('.sampleSites>section')]
-        console.log((sampleSites[0]).attributes.dataname.value);
+        const faSite = document.querySelector('#faSite');
+        faSite.addEventListener("mouseenter",function(){
+            console.log("fontawesome hovered");
+        });
+        console.dir(faSite);
         setHomeOpacity(1);
         props.setlogosOpacity(1);
     }, []);
@@ -35,9 +38,9 @@ function Home(props) {
                     <button className="btn btn-info"type ="button" onClick={()=>{setDisplay('none')}}>OK</button>
                 </div>
                 <div className="sampleSites row p-0 m-0 align-items-end justify-content-around">
-                    <section className="col-md-3 mt-5 mt-md-0 px-5 px-md-2" dataname='fontawesome'>
+                    <section id = 'faSite' className="col-md-3 mt-5 mt-md-0 px-5 px-md-2" >
                         <Link to="https://mzinzun.github.io/fontawesome/" target="_blank"><h3>FontAwesome App</h3>
-                        <img src={site1} className=' px-md-0 sites' dataname = "FontAwesome App" /></Link>
+                        <img src={site1} className=' px-md-0 sites' /></Link>
                     </section>
                     <section className="col-md-3 px-5 px-md-2" dataname='remodeling'>
                         <h3>Mikes Remodeling</h3>
