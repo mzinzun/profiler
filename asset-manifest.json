@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/profiler/static/css/main.02b6832e.css",
-    "main.js": "/profiler/static/js/main.9885e5db.js",
+    "main.js": "/profiler/static/js/main.6c7f27ff.js",
     "static/media/pdf.worker.js": "/profiler/static/media/pdf.worker.7172a025167de5d78c2b.js",
     "static/media/capstone.png": "/profiler/static/media/capstone.43c3f77c68e97ce514db.png",
     "static/media/mikesRemodel.png": "/profiler/static/media/mikesRemodel.923f8f9e503d8f2f6ae2.png",
     "static/media/myImage10.png": "/profiler/static/media/myImage10.f4169bf23e086aafa82d.png",
     "static/media/zincom.png": "/profiler/static/media/zincom.2817553af8b83cd0d28b.png",
+    "static/media/resume2024.pdf": "/profiler/static/media/resume2024.3d956b70cca5744d2d53.pdf",
     "static/media/fontawesome.png": "/profiler/static/media/fontawesome.6e6d1195f7abfa7c6882.png",
-    "static/media/mzResume.pdf": "/profiler/static/media/mzResume.c7eae21070b3804e16f8.pdf",
     "static/media/linkedin2.png": "/profiler/static/media/linkedin2.88b3cea5abe0168bc72d.png",
     "static/media/bootstrap2.png": "/profiler/static/media/bootstrap2.6d9dddb021e4cc864369.png",
     "static/media/express2.png": "/profiler/static/media/express2.fd29317eb0e9f0776f1c.png",
@@ -17,10 +17,10 @@
     "static/media/nodejs2.png": "/profiler/static/media/nodejs2.d413612a1029432d006e.png",
     "index.html": "/profiler/index.html",
     "main.02b6832e.css.map": "/profiler/static/css/main.02b6832e.css.map",
-    "main.9885e5db.js.map": "/profiler/static/js/main.9885e5db.js.map"
+    "main.6c7f27ff.js.map": "/profiler/static/js/main.6c7f27ff.js.map"
   },
   "entrypoints": [
     "static/css/main.02b6832e.css",
-    "static/js/main.9885e5db.js"
+    "static/js/main.6c7f27ff.js"
   ]
 }
