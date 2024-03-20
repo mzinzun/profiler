@@ -4,7 +4,7 @@ import { pdfjs, Document, Page } from 'react-pdf/dist/esm/entry.webpack5';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import 'react-pdf/dist/esm/Page/TextLayer.css';
 import './Resume.css';
-import resume from './mzResume.pdf';
+import resume from './resume2024.pdf';
 
 import { PDFDocumentProxy } from 'pdfjs-dist';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
